@@ -1,0 +1,35 @@
+body {
+background-color: #f0e68c;
+}
+
+h1 {
+	text-align: center;
+    color: darkblue;
+}
+
+
+table {
+	width: 100%;
+	background-color: #e0e0e0;
+}
+
+td {
+    padding: 10px;
+}
+
+table a {
+	color: brown;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+h2	{
+	text-align: center;
+     color: darkred;
+ }
+
+p  {
+    font-family: Arial;
+ 	font-size: 16px;
+    text-align: justify;
+}
