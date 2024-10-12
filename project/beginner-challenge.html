@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sarah Schwarz">
+    <link rel="stylesheet" href="styles.css"> 
+    <title>Junior Challenge</title>
+</head>
+<body>
+    <h1>Junior Challenge: JavaScript Coding Challenge</h1>
+    <div class="navbar">
+        <a href="about.html" class="button">About</a>
+        <a href="game.html" class="button">Let's Begin!</a>
+        <a href="study-material.html" class="button">Study Material</a>
+        <a href="challenges.html" class="button">Back to Challenges</a>
+    </div>
+
+    <p>Select the correct JavaScript code image below:</p>
+    <div class="challenge-container">
+        <label for="correct">
+            <input type="radio" id="correct" name="challenge" value="correct">
+            <img src="correct-image.jpg" alt="Correct JavaScript Code" class="challenge-image">
+        </label>
+        <label for="incorrect">
+            <input type="radio" id="incorrect" name="challenge" value="incorrect">
+            <img src="incorrect-image.jpg" alt="Incorrect JavaScript Code" class="challenge-image">
+        </label>
+    </div>
+
+    <div class="button-container" style="text-align: center; margin-top: 20px;">
+        <button onclick="alert('Please select an answer before submitting.')" class="submit-button">Submit Challenge</button>
+    </div>
+
+    <p style="text-align: center;">Choose wisely!</p>
+</body>
+</html>
