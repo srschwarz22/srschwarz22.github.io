@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sarah Schwarz"><!--Author Info-->
+    <link rel="stylesheet" href="styles.css"><!-- The linked style sheet-->
+    <title>SchwarzProject</title>
+</head>
+
+<body> <!-- main content -->
+<header>
+     <h1>Welcome to JavaSeek</h1> <!-- main hearder for contact.html file -->
+   
+     <div class="navbar"> <!-- This contains 5 buttons to navigate through site -->
+        <a href="about.html" class="button">About</a> <!--link for about.html-->
+        <a href="contact.html" class="button">Contact</a>  <!--link-->
+        <a href="game.html" class="button">JavaSeek Game</a> <!-- Game link-->
+        <a href="index.html" class="button">Home</a> <!-- Home link-->
+        <a href="studylinks.html" class="button">Study Material</a> <!-- Study material link-->
+    </div>
+</header>
+
+    <main> <!-- Content of contact page-->
+     <h2>Contact Page and Information</h2><!-- subheader for contact.html --> 
+
+    <section id="Mission"> <!-- section for mission statement -->
+            <h2>Mission</h2>
+            <p>At JavaSeek, our mission is to provide an engaging and interactive platform for learners of all levels to enhance their JavaScript skills. We believe that learning should be fun and accessible, making coding a rewarding experience for everyone.</p>
+        </section>
+
+    <section id="WhoIsJavaSeek"> <!-- section introducing the game and creator-->
+            <h2>Who Is JavaSeek</h2>
+            <p>JavaSeek was founded by Sarah Schwarz, a student of the NCAT Web Systems Class. It is a creative, simple game designed to entice learning about JavaScript in real-time. JavaSeek is still in mid-production but will have its final release date in December 2024..</p>
+        </section>
+
+    <section id="JoinUs"> <!-- section inviting members to join javaseek community -->
+        <h2>Join Us</h2>
+            <p>Whether you're just starting out or looking to refine your skills, JavaSeek provides the resources you need to succeed. Join our community today and take your JavaScript knowledge to the next level!</p>
+        </section>
+
+    <section id="form"> 
+        <h2>COntact Us</h2><!-- form for submitting an email to the webpage creater. Action to send email when the form is submitted.POST shows data and enctype for text-->
+        <form action="mailto:srschwarz@aggies.ncat.edu" method="post" enctype="text/plain">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="" required> <!-- email input field -->
+            <input type="submit" value="Submit"> <!-- submit button for the form for email action when clicked --> -->
+            <p>For any questions, feel free to reach out!</p>
+            </form>
+        </section>
+</main>
+
+    <footer><!-- Required footer, links to W3S for validation-->
+        <a href="https://validator.w3.org/check?uri=referer" referrerpolicy="unsafe-url">Validate HTML</a> <br>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer" referrerpolicy="unsafe-url">Validate CSS</a>
+    </footer>
+
+</body>
+</html>

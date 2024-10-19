@@ -1,42 +1,103 @@
-
-h1 {
-	justify-content: center;
-	align-items: center;
-	display: flex;
-
-}
-
+/* body styles */
 body {
-	background-color: #FFE4E1;
-
-}
- 
-.button {
- 
- 	padding: 10px 20px;
- 	background-color: #DEB887;
- 	color: white;
- 	text-decoration: none;
- 	border-radius: 10px;
- 	font-size: 1em;
- 	cursor: pointer;
- 	transition: background-color 0.3s;
- 	border: none;
-
- }
-
-.button:hover {
-	background-color: #BC8F8F;
+    background-color: #FFE4E1; /* light pink background */
+    text-align: center; /* center text */
+    font-size: 48px; /* base fontsize */
+    margin: 20px; /* outer margin */
 }
 
+/* flexbox set to 60% of avalible space */
+main {
+    flex: 0 1 60%; /* takes 60% of available space */
+}
+
+/* all h1 headers */
+h1 {
+    border-radius: 10px; /* rounded corners */
+    display: flex; /* flexbox layout */
+    justify-content: center; /* center horizontally */
+    align-items: center; /* center vertically */
+    font-size: 150px; /* large fontsize */
+}
+/* all h2 subheader*/
+h2 {
+    display: flex; /* flexbox layout */
+    justify-content: center; /* center horizontally */
+    align-items: center; /* center vertically */
+    font-size: 75px; /* medium fontsize */
+}
+
+/*about h3 subheaders*/
+h3 {
+    display: flex; /* flexbox layout */
+    justify-content: center; /* center horizontally */
+    align-items: center; /* center vertically */
+    font-size: 65px; /* medium fontsize */
+}
+
+
+p {
+    font-size: 55px; /* font size for paragraphs */
+}
+
+/* list items about page*/
+ul li {
+    font-size: 45px; /* fontsize*/
+    padding: 12px; /* padding for items */
+}
+
+/* centered text */
+.centered-text {
+    text-align: center; /* center text */
+    font-size: 48px; /* fontsize */
+    margin: 20px 0; /* margin */
+}
+
+/* button styles */
+.button, .submit-button {
+    padding: 20px 40px; /* padding */
+    background-color: #DEB887; /* background will be light brown */
+    color: white; /* text will be white*/
+    text-decoration: none; /* not selected */
+    border-radius: 10px; /* rounded corners */
+    font-size: 50px; /* fontsize */
+    cursor: pointer; /* pointer hover */
+    border: none; /* not selected*/
+    transition: background-color 0.3s; /* smooth hover transition */
+}
+
+.button:hover, .submit-button:hover {
+    background-color: #BC8F8F; /* darker brown on hover  for visule effect*/
+}
+
+/* navbar */
 .navbar {
-    display: flex; 
-    justify-content: center;  
-    margin-bottom: 20px; 
-    column-gap: 10px;
+    display: flex; /* flexbox layout */
+    justify-content: center; /* center items */
+    margin-top: 40px; /* margin above */
+    gap: 40px; /* space for items */
 }
 
+/* image container */
+.image-container {
+    display: flex; /* flexbox layout */
+    justify-content: center; /* center images */
+    align-items: flex-start; /* start */
+}
 
+.image-container img {
+    margin-left: -100px; /* adjust image */
+}
 
+/* beginner-challenge */
+.challenge-container {
+    padding: 20px 40px; /* padding */
+    border-radius: 10px; /* rounded soft corners */
+    cursor: pointer; /* pointer for hover */
+}
 
-
+/* image styles */
+img {
+    width: 500px; /* width */
+    margin-top: 50px; /* margin on top */
+}

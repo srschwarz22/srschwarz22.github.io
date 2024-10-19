@@ -5,33 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Sarah Schwarz">
     <link rel="stylesheet" href="styles.css"> 
-    <title>Junior Challenge</title>
+    <title>Junior Challenge Game</title>
 </head>
+
+
 <body>
-    <h1>Junior Challenge: JavaScript Coding Challenge</h1>
-    <div class="navbar">
-        <a href="about.html" class="button">About</a>
-        <a href="game.html" class="button">Let's Begin!</a>
-        <a href="study-material.html" class="button">Study Material</a>
-        <a href="challenges.html" class="button">Back to Challenges</a>
+<header>
+     <h1>Junior Challenge Level</h1><!-- main hearder for beginner.html file -->
+     <div class="navbar"> <!-- This contains 5 buttons to navigate through site -->
+        <a href="about.html" class="button">About</a> <!--link for about.html-->
+        <a href="contact.html" class="button">Contact</a>  <!--link-->
+        <a href="game.html" class="button">JavaSeek Game</a> <!-- Game link-->
+        <a href="index.html" class="button">Home</a> <!-- Home link-->
+        <a href="studylinks.html" class="button">Study Material</a> <!-- Study material link-->
     </div>
+ </header>
 
-    <p>Select the correct JavaScript code image below:</p>
-    <div class="challenge-container">
-        <label for="correct">
-            <input type="radio" id="correct" name="challenge" value="correct">
-            <img src="correct-image.jpg" alt="Correct JavaScript Code" class="challenge-image">
-        </label>
-        <label for="incorrect">
-            <input type="radio" id="incorrect" name="challenge" value="incorrect">
-            <img src="incorrect-image.jpg" alt="Incorrect JavaScript Code" class="challenge-image">
-        </label>
-    </div>
+<main><!-- Content of page-->s
+    <h2>JavaScript COding Challenge</h2><!-- subheader for coding challenge-->
 
-    <div class="button-container" style="text-align: center; margin-top: 20px;">
-        <button onclick="alert('Please select an answer before submitting.')" class="submit-button">Submit Challenge</button>
-    </div>
+    <p>Select the correct JavaScript code image below:</p><!-- instruction for the player-->
 
-    <p style="text-align: center;">Choose wisely!</p>
+        <div class="challenge-container"> <!--challenge images and radio buttons -->
+        <img src="Incorrect.png" alt="Incorrect image" width="500" height="200"> <!-- incorrect image -->
+        <label for="incorrect"> <!-- label for incorrect radio button -->
+        <input type="radio" id="incorrect" name="challenge" value="incorrect"> <!-- radio button for incorrect image -->
+    </label>
+    
+    <img src="Correct.png" alt="Correct image" width="500" height="200"> <!-- correct image -->
+    <label for="correct"> <!-- label for correct radio button -->
+        <input type="radio" id="correct" name="challenge" value="correct"> <!-- radio button for correct image -->
+    </label>
+</div>
+
+    <div class="button-container" style="text-align: center; margin-top: 20px;"> <!-- inline styling-->
+    <button onclick="alert('Please select an answer before submitting.')" class="submit-button">Submit Challenge</button> 
+</div>
+</main>
+
+
+<footer> <!-- Required footer, links to W3S for validation-->
+    <a href="https://validator.w3.org/check?uri=referer"
+        referrerpolicy="unsafe-url"> Validate HTML </a> <br>
+    <a href="https://jigsaw.w3.org/css-validator/check/referer"
+        referrerpolicy="unsafe-url"> Validate CSS </a>
+</footer>
+
 </body>
 </html>

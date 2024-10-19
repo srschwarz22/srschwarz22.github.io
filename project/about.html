@@ -1,32 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Sarah Schwarz">
-    <link rel="stylesheet" href="styles.css">
+    <meta name="author" content="Sarah Schwarz"><!--Author Info-->
+    <link rel="stylesheet" href="styles.css"><!-- The linked style sheet-->
     <title>SchwarzProject</title>
 </head>
-<body>
-    <h1>Welcome to JavaSeek</h1>
-    
-    <div class="navbar">
-        <a href="index.html" class="button">Home</a>
-        <a href="about.html" class="button">About</a>
-        <a href="game.html" class="button">Lets Begin!</a>
-        <a href="contact.html" class="button">Contact</a>
+
+<body><!-- main content -->
+
+    <header>
+     <h1>Welcome to JavaSeek</h1> <!-- main hearder for about,html file -->
+     <div class="navbar"> <!-- This contains 5 buttons to navigate through site -->
+        <a href="about.html" class="button">About</a> <!--link for about.html-->
+        <a href="contact.html" class="button">Contact</a>  <!--link-->
+        <a href="game.html" class="button">JavaSeek Game</a> <!-- Game link-->
+        <a href="index.html" class="button">Home</a> <!-- Home link-->
+        <a href="studylinks.html" class="button">Study Material</a> <!-- Study material link-->
     </div>
+</header>
 
-    <h2>About JavaSeek</h2>
-    <p>Java Seek is a platform designed to help users enhance their Javascript programming skills through various challenges and interactive learning experiences. Our mission is to provide an engaging way for learners and employers to connect over Javascript expertise.</p>
+<main>
+    <h2>About Page</h2> <!-- subheader for about.html --> 
 
-    <h2>Contact Information</h2>
-    <form action="mailto:srschwarz@aggies.ncat.edu" method="post" enctype="text/plain">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="srschwarz@aggies.ncat.edu" required>
-        <input type="submit" value="Submit">
-    </form>
-    <p>For any questions, feel free to reach out!</p>
+    <!--  Main content for about.html: the goal is to share the reason for development by subdividing it into different sections to help focus the user-->
+    <section id="learn-more"> 
+        <h3>Learn More</h3>
+            <p>Java Seek is a platform designed to help users enhance their Javascript programming skills through various challenges and interactive learning experiences. Our mission is to provide an engaging way for learners and employers to connect over Javascript expertise.If you would like to offer any feedback to this or have any questions, feel free to visit the Contact link above.</p>
+    </section>
+
+    <section id="mission">
+            <h3>Mission</h3>
+            <p>At JavaSeek, our mission is to provide an engaging and interactive platform for learners of all levels to enhance their JavaScript skills. We believe that learning should be fun and accessible, making coding a rewarding experience for everyone.</p>
+        </section>
+
+    <section id="who-is-JavaSeek">
+            <h3>Who Is JavaSeek</h3>
+            <p>JavaSeek was founded by Sarah Schwarz, a student of the NCAT Web Systems Class. It is a creative, simple game designed to entice learning about JavaScript in  
+               real-time. JavaSeek is still in mid-production but will have its final release date in December 2024..</p>
+        </section>
+
+    <section id="JavaSeek-teaches">
+             <h3>JavaSeek Teaches</h3>        
+             <p>JavaSeek can offer learning tools</p> <!-- learning tools -->
+             <ul>
+                <li>Visual coding assessments</li> <!-- Item listed explaining sources -->
+                <li>Comprehensive tutorials and resources</li><!-- Item listed explaining sources -->
+             </ul>
+        </section>
+    </main>
+
+<footer> <!-- Required footer, links to W3S for validation-->
+    <a href="https://validator.w3.org/check?uri=referer"
+    referrerpolicy="unsafe-url"> Validate HTML </a> <br> <br>
+    <a href="https://jigsaw.w3.org/css-validator/check/referer"
+     referrerpolicy="unsafe-url"> Validate CSS </a>
+</footer>
+
 </body>
 </html>
 
